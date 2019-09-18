@@ -1,2 +1,33 @@
-# web-dev-portfolio
-My web dev portfolio using reactjs for frontend and AWS for hosting
+# Justin Sparks' Portfolio
+
+This web portfolio will be using ReactJS for the frontend and AWS for hosting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
