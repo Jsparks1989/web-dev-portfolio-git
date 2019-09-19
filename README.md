@@ -8,4 +8,3 @@ Github,
 SSH,
 Atom,
 Visual Studios Code
-Testing Git 
