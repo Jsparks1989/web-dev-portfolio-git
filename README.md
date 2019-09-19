@@ -7,4 +7,5 @@ Git,
 Github,
 SSH,
 Atom,
-Visual Studios Code 
+Visual Studios Code
+Testing Git 
