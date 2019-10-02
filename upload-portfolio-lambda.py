@@ -10,12 +10,28 @@ def lambda_handler(event, context):
     sns = boto3.resource('sns')
     topic = sns.Topic('arn:aws:sns:us-east-1:928335481473:deploy-portfolio-topic')
     
+    location = {
+        "bucketName":"js-react-portfolio-build",
+        "objectKey": "portfoliobuild.zip"
+    }
     try:
+        
+        job = event.get("CodePipeline.job")
+        if job:
+            # getting to the inputArtifacts array in JSON event object and looping through it.
+            for artifact in job["data"]["inputArtifacts"]:
+                if artifact["name"] == "BuildArtif":
+                    location = artifact["location"]["s3Location"]
+                    print "Artifact location and s3Location when artifact name is BuildArtif: " + str(location)
+                    
+        print "Building portfolio from " + str(location)    
+                    
+        
         #s3 = boto3.resource('s3', config = Config(signature_version = 's3v4'))
         s3 = boto3.resource('s3')
         # names for the s3 buckets
         portfolio_bucket = s3.Bucket('js-react-portfolio')
-        build_bucket = s3.Bucket('js-react-portfolio-build')
+        build_bucket = s3.Bucket(location['bucketName'])
         
         # StringIO is used to have files that are only kept in memory, 
         # and never put in your file system. Can access files straight from
@@ -23,7 +39,7 @@ def lambda_handler(event, context):
         portfolio_zip = StringIO.StringIO()
         # ('name of file', 'StringIO instead of destination in the file system').
         # Now portfolio_zip is portfoliobuild.zip in memory, not in file system.
-        build_bucket.download_fileobj('portfoliobuild.zip', portfolio_zip)
+        build_bucket.download_fileobj(location["objectKey"], portfolio_zip)
         
         # Unzipping the portfoliobuild.zip file in js-react-portfolio-build bucket
         with zipfile.ZipFile(portfolio_zip) as myzip:
@@ -37,6 +53,9 @@ def lambda_handler(event, context):
         print "Job is done!"
         # topic.publish(Message="Portfolio was deployed successfully", PhoneNumber="+16784675209")
         topic.publish(Subject="Success", Message="Portfolio was deployed successfully", )
+        if job:
+            codepipeline = boto3.client("codepipeline")
+            codepipeline.put_job_success_result(jobId=job["id"])
          
     except:
         # topic.publish(Message="Portfolio was not successfully deployed", PhoneNumber="+16784675209")
@@ -51,6 +70,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': 'Code update was successful!!'
     }
-
-
-
