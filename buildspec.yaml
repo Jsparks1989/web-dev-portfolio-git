@@ -6,8 +6,7 @@ phases:
       nodejs: 8
   build:
     commands:
-      - npm install 
-      - npm run webpack
+      - echo nothing to build yet
 
 artifacts:
   files:
@@ -16,4 +15,4 @@ artifacts:
     - justin-sparks-resume-9-23-2019.pdf
     - styles/main.css
     - images/*
-    - dist/bundle.js
+    
