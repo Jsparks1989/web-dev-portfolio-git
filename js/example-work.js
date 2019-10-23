@@ -5,14 +5,15 @@ class ExampleWork extends React.Component{
         return(
             <section className="section section--alignCentered section--description">
                 {/* Look into this line of code a little more to understand it. */}
+                {/* 'this.props.work.map' is mapping out 'const myWork' list from main.js */}
+
+                {/* Breaking down 'work'(myWork) array down to each individual object(example, idx). */}
                 {this.props.work.map( (example, idx) => {
                     return(
+                        {/* Each individual object from myWork is placed into an ExampleWorkBubble */}
                         <ExampleWorkBubble example={example} key={idx}/>
                     )
                 })}
-                
-
-                
             </section>
         )
     }
@@ -21,6 +22,7 @@ class ExampleWork extends React.Component{
 
 class ExampleWorkBubble extends React.Component{
     render(){
+        {/* Assigning 'example' that was passed to ExampleWorkBubble from ExampleWork to let example. */}
         let example = this.props.example;
         return (
             <div className="section__exampleWrapper">
