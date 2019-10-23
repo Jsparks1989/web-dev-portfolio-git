@@ -28,6 +28,7 @@ const myWork = [
     }
 ]
 
+//-- Goes in index.html div#id example-work; work is a props
 ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
 
 
