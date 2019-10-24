@@ -33,4 +33,10 @@ describe('ExampleWork Component', () => {
     it("Should be a 'section' element", () => {
         expect(component.type()).toEqual('section');
     });
+
+    //-- find() will find children(ExampleWorkBubble) of a component(ExampleWork); returns an array.
+    //-- expecting the length of the component.find() array to be equal to the myWork array.
+    it("Should contain as many children as there are work examples", () => {
+        expect(component.find("ExampleWorkBubble").length).toEqual(myWork.length)
+    });
 });
