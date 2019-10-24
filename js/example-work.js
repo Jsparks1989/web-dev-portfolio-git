@@ -1,18 +1,35 @@
 import React from 'react';
 
+/**
+ * 
+ *  map() does the same thing as foreach loop.
+ *  But map() will return a new array, when foreach
+ *  will only alter the original array.
+ *  Example of map():
+ * 
+ *  let names = [justin, matt, jared];
+ * 
+ * 
+ * takes in each 'item' in the array, the 'index' of each item, and the entire 'array' as params.
+ *  let newNamesArray = names.map(function(item, index, array){
+ *  });
+ * 
+ * 
+ */
+
+
+
+
 class ExampleWork extends React.Component{
     render(){
         return(
-            // 'class' is a reserved word in js, must use 'className' in React
             <section className="section section--alignCentered section--description">
-                {/* Look into this line of code a little more to understand it. */}
-                {/* 'this.props.work.map' is mapping out 'const myWork' list from main.js */}
-                
-                {/* Breaking down 'work'(myWork) array down to each individual object(example, idx). */}
+
                 {this.props.work.map( (example, idx) => {
-                    console.log('example: ' + example);
-                    //-- 'example' is a props
-                    //-- comment cant go in return()
+                    console.log('example: '); 
+                    console.log(example);
+                    console.log('idx: '); 
+                    console.log(idx);
                     return(
                         <ExampleWorkBubble example={example} key={idx}  />
                     )
@@ -25,7 +42,7 @@ class ExampleWork extends React.Component{
 
 class ExampleWorkBubble extends React.Component{
     render(){
-        {/* Assigning 'example' that was passed to ExampleWorkBubble from ExampleWork to let example. */}
+
         let example = this.props.example;
 
         return (
@@ -35,7 +52,6 @@ class ExampleWorkBubble extends React.Component{
                     className="section__exampleImage"
                     src={ example.image.src }/>
                 <dl className="color--cloud">
-                    {/* This is how you do a comment in JSX */}
                     <dt className="section__exampleTitle section__text--centered">
                     { example.title }
                     </dt>
@@ -48,5 +64,5 @@ class ExampleWorkBubble extends React.Component{
 }
 
 
-//-- Exporting ExampleWork to be imported in main.js
+
 export default ExampleWork;
