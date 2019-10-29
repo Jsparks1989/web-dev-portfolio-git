@@ -52,13 +52,11 @@ describe('ExampleWorkBubble Component', () => {
         expect(component.type()).toEqual('div');
     });
 
-    //-- finding all the img elements inside the ExampleWorkBubble component. 
-    //-- 'images' will be an array of all the img elements found in the ExampleWorkBubble component.
+    
+
     let images = component.find("img");
 
-    //-- find the image inside of the bubble.
     it('Should contain a single image element', () => {
-        //-- Expecting the 'images' array to only have one object
         expect(images.length).toEqual(1);
     });
 });

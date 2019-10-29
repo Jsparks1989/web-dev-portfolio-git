@@ -8,6 +8,8 @@ import ExampleWork from './example-work';
 const myWork = [
     {
         'title': "Wedding",
+        'href': "https://example.com",
+        'desc': "This is filler text for Wedding. I will change it later.",
         'image': {
             'desc': "Wedding website I created with Wordpress",
             'src': "images/kimmie-milo-wedding-portfolio.png"
@@ -15,12 +17,16 @@ const myWork = [
     },
     {
         'title': "Buy AC",
+        'href': "https://example.com",
+        'desc': "This is filler text for Buy AC. I will change it later.",
         'image': {
             'desc': "Ecommerce site I created for an HVAC company",
             'src': "images/buy_ac_thumb_portfolio.png"
         }
     },{
         'title': "Ecommerce",
+        'href': "https://example.com",
+        'desc': "This is filler text for Ecommerce. I will change it later.",
         'image': {
             'desc': "Mock ecommerce site I created",
             'src': "images/needs-n-likes-portfolio.png"
