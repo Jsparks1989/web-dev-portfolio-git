@@ -34,6 +34,7 @@ describe('Example Work Modal Component', () => {
         expect(anchors.prop('href')).toEqual(myExample.href);
     });
 
+    //-- Checking to make sure that the class for modal is set to 'modal--closed'.
     it("Should have the modal class set correctly", () => {
         expect(component.find('.background--skyBlue').hasClass('modal--closed')).toBe(true);
     });
