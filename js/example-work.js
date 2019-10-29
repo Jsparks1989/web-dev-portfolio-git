@@ -2,17 +2,23 @@ import React from 'react';
 import ExampleWorkModal from './example-work-modal';
 
 class ExampleWork extends React.Component{
-    //-- Created constructor to use 'state' for ExampleWorkModal. Chose to put constructor in ExampleWork, not ExampleWorkModal, so it can be managed outside the modal component.
+    
     constructor(props){
         super(props);
-        // Value of state is always an object
+        //-- Now need to add event handlers, click events, to dynamically change modalOpen and selectedExample when user clicks on work images.
+        //-- Need two functions: 1st function to open modal window, 2nd to close window.
         this.state = {
             'modalOpen': false,
-            //-- Which work is selected? wedding? ecommerce?; The work is passed to ExampleWork through 'work'. Default value is going to be the first element in work array.
-            //-- The selected example is wedding. Now can pass wedding data to ExampleWorkModal.
             'selectedExample': this.props.work[0] 
-        }
+        };
     }
+    //-- Passing the event (evt), and the example clicked on (example).
+    //-- When an event is invoked, it will be passed an event object as 
+    //-- it's first argument. You can name evt whatever you like. Common names are e evt and event.
+    openModal(evt, example){
+
+    }
+
     render(){
         return(
             // Need to wrap both JSX elements in span tag so test will pass
