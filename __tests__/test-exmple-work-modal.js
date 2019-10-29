@@ -21,8 +21,10 @@ const myExample = {
 };
 
 describe('Example Work Modal Component', () => {
+    //-- modalClass set to false.
     let component = shallow(<ExampleWorkModal example={myExample} open={false}/>);
     let anchors = component.find("a");
+    //-- modalClass set to true.
     let openComponent = shallow(<ExampleWorkModal example={myExample} open={true}/>);
 
     it("Should contain a single 'a' element", () => {
@@ -35,8 +37,10 @@ describe('Example Work Modal Component', () => {
     });
 
     //-- Checking to make sure that the class for modal is set to 'modal--closed'.
+    //-- 'component' props.open = false, so will return 'modal--closed'.
     it("Should have the modal class set correctly", () => {
         expect(component.find('.background--skyBlue').hasClass('modal--closed')).toBe(true);
+        expect(openComponent.find('.background--skyBlue').hasClass('modal--open')).toBe(true);
     });
 })
 
