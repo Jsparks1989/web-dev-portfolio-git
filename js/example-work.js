@@ -43,7 +43,8 @@ class ExampleWork extends React.Component{
 
                     {this.props.work.map( (example, idx) => {
                         return(
-                            <ExampleWorkBubble example={example} key={idx}  />
+                            //-- Passing the openModal function as a prop so bubble component has access to it.
+                            <ExampleWorkBubble example={example} key={idx} openModal={this.openModal}  />
                         )
                     })}
                 </section>
@@ -58,9 +59,9 @@ class ExampleWork extends React.Component{
 class ExampleWorkBubble extends React.Component{
     render(){
         let example = this.props.example;
-
+        //-- Want to call the openModal/closeModal functions here in ExampleWorkBubble, when user clicks on the image
         return (
-            <div className="section__exampleWrapper">
+            <div className="section__exampleWrapper" onClick={ (evt) => this.props.openModal(evt, example) }>
                 <div className="section__example">
                 <img alt={ example.image.desc }
                     className="section__exampleImage"
