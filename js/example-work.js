@@ -1,15 +1,16 @@
 import React from 'react';
 import ExampleWorkModal from './example-work-modal';
 
-
 class ExampleWork extends React.Component{
+    //-- Created constructor to use 'state' for ExampleWorkModal. Chose to put constructor in ExampleWork, not ExampleWorkModal, so it can be managed outside the modal component.
     constructor(props){
         super(props);
-
         // Value of state is always an object
         this.state = {
             'modalOpen': false,
-            'selectedExample': this.props.work[0]
+            //-- Which work is selected? wedding? ecommerce?; The work is passed to ExampleWork through 'work'. Default value is going to be the first element in work array.
+            //-- The selected example is wedding. Now can pass wedding data to ExampleWorkModal.
+            'selectedExample': this.props.work[0] 
         }
     }
     render(){
@@ -34,7 +35,6 @@ class ExampleWork extends React.Component{
 
 class ExampleWorkBubble extends React.Component{
     render(){
-
         let example = this.props.example;
 
         return (
