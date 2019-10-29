@@ -3,7 +3,10 @@ import React from 'react';
 
 class ExampleWorkModal extends React.Component {
     render() {
+      //-- setting 'example' to props.example(state.selectedExample) that was passed to it in example-work.js
       let example = this.props.example;
+      //-- setting 'modalClass' to props.open(state.modalOpen) that was passed to it in example-work.js
+      //-- if props.open(modalOpen) is set to true, return modal--open; if false, return modal--closed.
       let modalClass = this.props.open ? 'modal--open' : 'modal--closed';
         return(
             <div className={"background--skyBlue " + modalClass}>

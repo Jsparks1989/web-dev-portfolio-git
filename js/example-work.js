@@ -25,7 +25,7 @@ class ExampleWork extends React.Component{
                         )
                     })}
                 </section>
-
+                {/* Can now pass state data from constructor to ExampleWorkModal */}
                 <ExampleWorkModal example={this.state.selectedExample} open={this.state.modalOpen}/>
             </span>
         )
