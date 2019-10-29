@@ -11,12 +11,28 @@ class ExampleWork extends React.Component{
             'modalOpen': false,
             'selectedExample': this.props.work[0] 
         };
+
+        //-- Giving the openModal/closeModal functions access to the object
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
+
+
     //-- Passing the event (evt), and the example clicked on (example).
     //-- When an event is invoked, it will be passed an event object as 
     //-- it's first argument. You can name evt whatever you like. Common names are e evt and event.
     openModal(evt, example){
+        //-- setState() primary method you use to update the user interface in response to event handlers and server responses.
+        this.setState({
+            'modalOpen': true,
+            'selectedExample': example
+        })
+    }
 
+    closeModal(evt){
+        this.setState({
+            'modalOpen': false
+        })
     }
 
     render(){
