@@ -17,7 +17,7 @@ const myWork = [
     },
     {
         'title': "Buy AC",
-        'href': "https://example.com",
+        'href': "52.203.64.139",
         'desc': "This is filler text for Buy AC. I will change it later.",
         'image': {
             'desc': "Ecommerce site I created for an HVAC company",
@@ -25,7 +25,7 @@ const myWork = [
         }
     },{
         'title': "Ecommerce",
-        'href': "https://example.com",
+        'href': "52.203.64.139",
         'desc': "This is filler text for Ecommerce. I will change it later.",
         'image': {
             'desc': "Mock ecommerce site I created",
