@@ -8,7 +8,7 @@ import ExampleWork from './example-work';
 const myWork = [
     {
         'title': "Wedding",
-        'href': "https://example.com",
+        'href': "52.203.64.139",
         'desc': "This is filler text for Wedding. I will change it later.",
         'image': {
             'desc': "Wedding website I created with Wordpress",
