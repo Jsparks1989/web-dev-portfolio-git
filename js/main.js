@@ -9,9 +9,9 @@ const myWork = [
     {
         'title': "Wedding",
         'href': "52.203.64.139",
-        'desc': "This is filler text for Wedding. I will change it later.",
+        'desc': "Wedding website created in Wordpress.",
         'image': {
-            'desc': "Wedding website I created with Wordpress444",
+            'desc': "Wedding website I created with Wordpress",
             'src': "images/kimmie-milo-wedding-portfolio.png"
         }
     },
