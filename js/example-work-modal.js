@@ -8,6 +8,8 @@ class ExampleWorkModal extends React.Component {
       //-- setting 'modalClass' to props.open(state.modalOpen) that was passed to it in example-work.js
       //-- if props.open(modalOpen) is set to true, return modal--open; if false, return modal--closed.
       let modalClass = this.props.open ? 'modal--open' : 'modal--closed';
+      console.log('Example Work Modal:');
+      console.log(example.href);
         return(
             <div className={"background--skyBlue " + modalClass}>
               <span className="color--cloud modal__closeButton">
