@@ -24,7 +24,7 @@ class ExampleWorkModal extends React.Component {
                 </h2>
                 <a className="color--skyBlue modal__link"
                   href={ example.href }>
-                  Check it out!!!!
+                  Check it out
                 </a>
                 <p className="modal__description">
                   { example.desc }
