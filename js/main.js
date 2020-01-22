@@ -7,8 +7,8 @@ import ExampleWork from './example-work';
 //-- Will be a list of object literals
 const myWork = [
     {
-        'title': "Weddingssss",
-        'href': "52.203.64.139",
+        'title': "Wedding",
+        'href': "http://52.203.64.139",
         'desc': "Wedding website created in Wordpress.",
         'image': {
             'desc': "Wedding website I created with Wordpress",
