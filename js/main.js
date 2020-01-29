@@ -24,15 +24,15 @@ const myWork = [
             'src': "images/buy_ac_thumb_portfolio.png"
         }
     },
-    // {
-    //     'title': "Ecommerce",
-    //     'href': "52.203.64.139",
-    //     'desc': "This is filler text for Ecommerce. I will change it later.",
-    //     'image': {
-    //         'desc': "Mock ecommerce site I created",
-    //         'src': "images/needs-n-likes-portfolio.png"
-    //     }
-    // }
+    {
+        'title': "Ecommerce",
+        'href': "52.203.64.139",
+        'desc': "This is filler text for Ecommerce. I will change it later.",
+        'image': {
+            'desc': "Mock ecommerce site I created",
+            'src': "images/needs-n-likes-portfolio.png"
+        }
+    }
     ,{
         'title': "NHCEF",
         'href': "http://nhcef.org/",
