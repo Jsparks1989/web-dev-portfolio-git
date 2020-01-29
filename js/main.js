@@ -9,7 +9,7 @@ const myWork = [
     {
         'title': "Wedding",
         'href': "http://52.203.64.139",
-        'desc': "Wedding website created in Wordpress.",
+        'desc': "Wedding website created in Wordpress. Site is hosted in AWS.",
         'image': {
             'desc': "Wedding website I created with Wordpress",
             'src': "images/kimmie-milo-wedding-portfolio.png"
@@ -17,20 +17,49 @@ const myWork = [
     },
     {
         'title': "Buy AC",
-        'href': "52.203.64.139",
+        'href': "http://www.buyac.com/",
         'desc': "This is filler text for Buy AC. I will change it later.",
         'image': {
             'desc': "Ecommerce site I created for an HVAC company",
             'src': "images/buy_ac_thumb_portfolio.png"
         }
-    },{
-        'title': "Ecommerce",
-        'href': "52.203.64.139",
-        'desc': "This is filler text for Ecommerce. I will change it later.",
+    },
+    // {
+    //     'title': "Ecommerce",
+    //     'href': "52.203.64.139",
+    //     'desc': "This is filler text for Ecommerce. I will change it later.",
+    //     'image': {
+    //         'desc': "Mock ecommerce site I created",
+    //         'src': "images/needs-n-likes-portfolio.png"
+    //     }
+    // }
+    ,{
+        'title': "NHCEF",
+        'href': "http://nhcef.org/",
+        'desc': "North Hall Community Education Foundation description",
         'image': {
-            'desc': "Mock ecommerce site I created",
-            'src': "images/needs-n-likes-portfolio.png"
+            'desc': "North Hall Community Education Foundation image description",
+            'src': "images/nhcef_logo.png"
         }
+    },{
+        'title': "PHP Blog",
+        'href': "http://justin-cms.com",
+        'desc': "Blogging website done in php",
+        'image': {
+            'desc': "Image of Justin PHP blog site",
+            'src': "images/php_cms_image.png"
+        }
+        
+    },{
+        
+        'title': "Consultants-Lab",
+        'href': "https://consultants-lab.com/",
+        'desc': "Description of Consultants-Lab website",
+        'image': {
+            'desc': "Image of Consultants-Lab image",
+            'src': "images/medical_source_thumb.png"
+        }
+
     }
 ]
 
