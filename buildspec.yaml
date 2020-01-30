@@ -13,7 +13,7 @@ artifacts:
   files:
     - index.html
     - justin-sparks-resume-9-23-2019.pdf
-    - styles/main.css
+    - styles/*
     - images/*
-    - dist/bundle.js
+    - dist/*
     
