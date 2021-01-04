@@ -12,8 +12,9 @@ phases:
 artifacts:
   files:
     - index.html
-    - justin-sparks-resume-9-23-2019.pdf
+    - justin-sparks-resume-4-2-2020.pdf
     - styles/*
     - images/*
     - dist/*
+    - js/*
     
