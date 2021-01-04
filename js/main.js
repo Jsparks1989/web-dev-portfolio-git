@@ -9,7 +9,7 @@ const myWork = [
     {
         'title': "Wedding",
         'href': "http://52.203.64.139",
-        'desc': "Wedding website created in Wordpress. Site is hosted in AWS.",
+        'desc': "Wedding website created in Wordpress. Site is hosted in AWS on an EC2 instance.",
         'image': {
             'desc': "Wedding website I created with Wordpress",
             'src': "images/kimmie-milo-wedding-portfolio.png"
@@ -18,7 +18,7 @@ const myWork = [
     {
         'title': "Buy AC",
         'href': "http://www.buyac.com/",
-        'desc': "This is filler text for Buy AC. I will change it later.",
+        'desc': "HVAC website created in Wordpress. The website's purpose is to deliver product information to customers.",
         'image': {
             'desc': "Ecommerce site I created for an HVAC company",
             'src': "images/buy_ac_thumb_portfolio.png"
@@ -36,7 +36,7 @@ const myWork = [
     ,{
         'title': "NHCEF",
         'href': "http://nhcef.org/",
-        'desc': "North Hall Community Education Foundation description",
+        'desc': "North Hall Community Education Foundation website.",
         'image': {
             'desc': "North Hall Community Education Foundation image description",
             'src': "images/nhcef_logo.png"
@@ -44,7 +44,7 @@ const myWork = [
     },{
         'title': "PHP Blog",
         'href': "http://justin-cms.com",
-        'desc': "Blogging website done in php",
+        'desc': "Blog website created using PHP running on a LAMP Stack. The website is hosted in AWS on an EC2 instance. Pages are dynamically filled with data from a MySQL database. The website allows users to create/edit/delete their own posts and allows for the Admin to determine which posts can be displayed.",
         'image': {
             'desc': "Image of Justin PHP blog site",
             'src': "images/php_cms_image.png"
@@ -54,7 +54,7 @@ const myWork = [
         
         'title': "Consultants-Lab",
         'href': "https://consultants-lab.com/",
-        'desc': "Description of Consultants-Lab website",
+        'desc': "Website for Consultants-Lab, created with Wordpress. The website's purpose is to deliver product information to customers.",
         'image': {
             'desc': "Image of Consultants-Lab image",
             'src': "images/medical_source_thumb.png"
